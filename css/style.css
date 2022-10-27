@@ -1,0 +1,59 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+
+ul{
+    list-style-type:none;
+    /* ^removes bullet points */
+    margin: 0;
+    /* ^removes default margin */
+    padding: 0;
+    /* ^removes default padding */
+    background-color: #333;
+    display: flex;
+    /* ^makes list items horizontal */
+}
+
+li a, .dropbtn{
+    color:#fff;
+    text-decoration: none;
+    /* ^removes bullet points */
+    text-align: center;
+    padding: 14px 16px;
+    display: inline-block;
+    /* ^adds vertical and horizontal padding */
+}
+
+li a:hover, .dropdown:hover .dropbtn{
+    background-color:rgb(16, 110, 110);
+    transition: 0.7s;
+}
+li.dropdown{
+    display: inline-block;
+}
+
+.dropdown-menu{
+     /* if you want it to be horizontal, do opasity:0 instead of display:none */
+    /* opacity: 0; */
+    display:none;
+    min-width:160px;
+    /* ^how small the screen can be squished */
+    background-color: rgb(10, 63, 63);
+    position: absolute;
+    /* ^keeps dropdowns lined up with the Dropdown button */
+    box-shadow:0px 8px 16px 0px rgba(0,0,0,0.4);
+    /* (horizontal offset) (vert offset) (blur radius) (spread radius) */
+}
+
+.dropdown:hover .dropdown-menu{
+    /* if you want it to be horizontal, do opasity:1 instead of display:block */
+    /* opacity: 1; */
+    display:block;
+}
+
+.dropdown-menu a{
+    display: block;
+    /* makes our drop down menu items take up the full space */
+}
+

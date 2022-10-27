@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop Down Menu</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">News</a></li>
+            <!-- the dropdown menu starts bellow -->
+            <li class="dropdown">
+                <!-- .dropdown will select the button Dropdown-->
+                <a class="dropbtn" href="#">Dropdown</a>
+                <!-- .dropbtn will select the content inside the button dropdown -->
+                    <ul class="dropdown-menu">
+                        <!-- .dropdown-menu will select the drop down list(menu) that appears -->
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 2</a></li>
+                        <li><a href="#">Link 3</a></li>
+                    </ul>
+            </li>
+            <!-- dropdown menu ends here -->
+        </ul>
+</body>
+</html>
+
+<!-- think of drop downs like this:
+
+    (li class) is like a border 
+    its the box, the button
+
+    (a class) is the inside
+
+    (ul class) is the list/dropdown menu-->
